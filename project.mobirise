@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "pumpfun",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1b1d28"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/pumpfun_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://pum-pfun.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://pum-pfun.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "fafosduvqa",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "PumpFun | Pump.fun | Home",
+        "meta_descr": "SUPER CHILL NIGGA (CHILLNIGGA): THE CHILLEST AND BLACKEST NIGGA ON PUMP FUN · SAVE 4 MONKEYS. created by. 8rzkLf. 9h ago. market cap: $18.1K. replies: 25.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/pumpfun.png\" alt=\"pumpfun\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uuKECTe5RH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1b1d28\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1b1d28\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>PumpFun: Revolutionizing Fun and Engagement in the Crypto Space</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The cryptocurrency landscape is constantly evolving, with new projects and platforms emerging to capture the attention of users and investors alike. One such project that has gained significant traction is <a href=\"https://pum-pfun.github.io/\" class=\"text-primary\"><b>PumpFun</b></a>, a platform designed to combine the excitement of cryptocurrency trading with engaging, community-driven experiences. By integrating elements of entertainment, social interaction, and gamification, <a href=\"https://pump.fun/board\" class=\"text-primary\"><b>PumpFun</b></a> aims to create a unique environment where users can enjoy the thrill of trading while fostering connections with fellow enthusiasts. This blog will explore the key features, unique value propositions, and potential impact of PumpFun on the crypto ecosystem.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is PumpFun?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">PumpFun is a decentralized platform that blends the worlds of cryptocurrency trading and social engagement. It provides users with tools and features that encourage interaction, competition, and fun, all while allowing them to trade various digital assets. By leveraging the principles of gamification and community involvement, PumpFun seeks to make the crypto experience more enjoyable and accessible for everyone, from beginners to seasoned traders.<br><br><b>The Vision Behind PumpFun</b><br>The vision of PumpFun is to create a vibrant and engaging community where users can explore cryptocurrency trading in a fun and interactive way. Recognizing that the crypto space can often feel overwhelming and intimidating, PumpFun aims to lower the barriers to entry and provide a welcoming environment that encourages participation and learning. By fostering a sense of community and shared experience, PumpFun aspires to make cryptocurrency trading an enjoyable and rewarding endeavor.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of PumpFun</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Gamified Trading Experience</b><br>At the heart of PumpFun is its gamified trading experience, which allows users to engage in trading competitions and challenges. By introducing elements of gaming, such as leaderboards, achievements, and rewards, PumpFun transforms the often solitary experience of trading into a dynamic and social activity. Users can compete against friends or other community members, adding an element of excitement and motivation to their trading endeavors.<br><br><b>2. Community Engagement</b><br>PumpFun places a strong emphasis on community engagement. Users can connect with fellow traders, share insights, and participate in discussions on various topics related to crypto trading. The platform hosts community events, AMAs (Ask Me Anything sessions), and webinars, allowing users to learn from one another and deepen their understanding of the crypto market.<br><br><b>3. Educational Resources</b><br>To empower users, PumpFun offers a wealth of educational resources designed to help them navigate the complexities of cryptocurrency trading. From beginner guides to advanced trading strategies, users can access a variety of content that caters to their individual needs. This focus on education ensures that users are well-informed and equipped to make confident trading decisions.<br><br><b>4. Token-Based Incentives</b><br>PumpFun has its native token, which serves as the backbone of the ecosystem. Users can earn tokens through participation in trading competitions, community events, and other activities. These tokens can be used for various purposes within the platform, such as accessing premium features, participating in exclusive events, or trading on the exchange.<br><br><b>5. Multi-Asset Trading</b><br>The platform supports a wide range of cryptocurrencies, allowing users to trade popular assets and discover new opportunities. By providing access to diverse trading pairs, PumpFun empowers users to explore different segments of the cryptocurrency market, enhancing their trading experience.<br><br><b>6. User-Friendly Interface</b><br>Recognizing that ease of use is crucial for attracting new users, PumpFun features a user-friendly interface that simplifies the trading process. The platform is designed to be intuitive, making it accessible to users of all experience levels. Whether you're a novice or an experienced trader, navigating the platform is straightforward and efficient.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><div><b style=\"font-size: 2rem;\">The Problems PumpFun Aims to Solve</b><br></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Lack of Engagement in Crypto Trading</b><br>Many individuals find cryptocurrency trading to be a solitary and sometimes daunting experience. PumpFun addresses this issue by gamifying the trading process and fostering community engagement. By creating a social environment, the platform encourages users to connect and interact, making trading a more enjoyable experience.<br><br><b>2. Knowledge Gaps</b><br>The crypto space can be overwhelming, with a steep learning curve for newcomers. PumpFun aims to bridge this gap by providing educational resources and support. By equipping users with the knowledge they need to succeed, PumpFun empowers them to make informed trading decisions.<br><br><b>3. Limited Access to Trading Opportunities</b><br>New traders may struggle to find opportunities in the crowded crypto market. PumpFun's multi-asset trading feature enables users to explore a variety of cryptocurrencies, expanding their options and increasing their chances of discovering profitable trades.<br><br><b>4. Inefficient Trading Processes</b><br>Many trading platforms can be complex and challenging to navigate. PumpFun addresses this issue with a user-friendly interface designed to streamline the trading process. By simplifying the experience, PumpFun makes it easier for users to engage with the platform and execute trades.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How PumpFun Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User Registration</b><br>Getting started with PumpFun is simple. Users can register for an account by providing basic information and connecting their crypto wallets. This process allows users to quickly access the platform and begin trading.<br><br><b>2. Trading Competitions</b><br>Once registered, users can participate in trading competitions. These competitions typically involve specific trading challenges, such as achieving the highest returns within a set timeframe. Participants can track their progress on leaderboards and earn rewards based on their performance.<br><br><b>3. Community Engagement</b><br>PumpFun encourages users to engage with the community through forums and social features. Users can participate in discussions, share insights, and collaborate on trading strategies. Community events and AMAs provide additional opportunities for interaction and learning.<br><br><b>4. Accessing Educational Resources</b><br>Users can explore a variety of educational resources available on PumpFun. From articles to video tutorials, the platform offers content tailored to different skill levels. This emphasis on education ensures that users have the tools they need to navigate the crypto market confidently.<br><br><b>5. Earning and Using Tokens</b><br>Users can earn PumpFun tokens by participating in competitions, engaging with the community, and completing educational modules. These tokens can be used to access premium features, participate in exclusive events, or trade on the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using PumpFun</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhanced Engagement</b><br>By gamifying the trading experience, PumpFun encourages users to participate actively and engage with the community. This enhanced engagement leads to a more enjoyable and rewarding trading experience.<br><br><b>2. Comprehensive Educational Support</b><br>PumpFun's commitment to education empowers users to make informed decisions. With access to a wealth of resources, users can continuously improve their trading skills and knowledge.<br><br><b>3. Diverse Trading Opportunities</b><br>With support for multiple cryptocurrencies, PumpFun allows users to explore a wide range of trading opportunities. This diversity increases the likelihood of finding profitable trades and enhances the overall trading experience.<br><br><b>4. User-Friendly Interface</b><br>PumpFun's intuitive interface makes it accessible to users of all experience levels. Whether you're new to trading or a seasoned pro, navigating the platform is straightforward and efficient.<br><br><b>5. Community Building</b><br>PumpFun fosters a sense of community among users, encouraging collaboration and interaction. This supportive environment helps users feel connected and engaged, reducing the isolation often associated with trading.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of PumpFun</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Features and Functionalities</b><br>As the crypto landscape continues to evolve, PumpFun is likely to expand its features and functionalities. This may include new trading options, enhanced educational resources, and additional gamification elements to keep users engaged.<br><br><b>2. Strengthening Community Engagement</b><br>PumpFun will likely continue to prioritize community engagement, creating more opportunities for users to connect and collaborate. This could involve hosting more events, webinars, and social activities.<br><br><b>3. Adoption of New Technologies</b><br>To enhance the trading experience, PumpFun may explore the adoption of new technologies, such as advanced analytics, AI-driven trading tools, and integration with emerging blockchain platforms. These innovations can improve user experience and expand the platform's capabilities.<br><br><b>4. Partnerships and Collaborations</b><br>PumpFun may pursue partnerships with other crypto projects, exchanges, and educational platforms to enhance its offerings. Collaborations can provide users with additional resources and opportunities for engagement.<br><br><b>5. Growing the User Base</b><br>As PumpFun continues to evolve, it will likely focus on growing its user base. By offering an engaging and educational platform, PumpFun can attract new users and create a vibrant community of traders.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The cryptocurrency market is known for its volatility, which can pose risks for traders. While PumpFun provides educational resources, users should be aware of the inherent risks associated with trading in a fluctuating market.<br><br><b>2. Regulatory Landscape</b><br>As the crypto industry matures, it may face increasing regulatory scrutiny. PumpFun must navigate these regulatory challenges to ensure compliance and maintain user trust.<br><br><b>3. Competition in the Crypto Space</b><br>The crypto market is highly competitive, with numerous platforms offering similar features. PumpFun must continually innovate and differentiate itself to attract and retain users.<br><br><b>4. Security Risks</b><br>As with any online platform, security is a critical concern. PumpFun must prioritize security measures to protect user data and assets from potential threats.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">PumpFun represents an exciting evolution in the cryptocurrency trading landscape, offering a unique blend of entertainment, community engagement, and educational resources. By gamifying the trading experience and fostering connections among users, PumpFun aims to make cryptocurrency trading more accessible and enjoyable for everyone.<br><br>As the platform continues to grow and evolve, it has the potential to become a leading destination for traders seeking not only to maximize their profits but also to engage with a vibrant community. With its focus on education, user-friendly design, and innovative features, PumpFun is well-positioned to make a lasting impact on the crypto ecosystem.<br><br>For anyone looking to explore the world of cryptocurrency trading in a fun and engaging way, PumpFun offers a promising avenue. By prioritizing user experience and community involvement, it paves the way for a new era of trading that combines financial opportunities with social interaction. Whether you're a novice or an experienced trader, PumpFun provides the tools and resources needed to thrive in the dynamic world of cryptocurrency.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uuKEDbr3F2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
